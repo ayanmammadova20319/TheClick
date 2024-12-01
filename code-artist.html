@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Pattern Art</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="art-canvas" width="800" height="800"></canvas>
+
+    <script>
+        // Get canvas element and context
+        let canvas = document.getElementById('art-canvas');
+        let ctx = canvas.getContext('2d');
+
+        // Draw a dynamic geometric pattern
+        function drawGeometricArt() {
+            let centerX = canvas.width / 2;
+            let centerY = canvas.height / 2;
+            let totalShapes = 50;
+            let maxRadius = 250;
+
+            for (let i = 0; i < totalShapes; i++) {
+                let angle = i * Math.PI / 15;  // Angle between each shape
+                let radius = i * (maxRadius / totalShapes); // Increase radius for each shape
+                let x = centerX + radius * Math.cos(angle);
+                let y = centerY + radius * Math.sin(angle);
+
+                // Choose random colors
+                let r = Math.floor(Math.random() * 256);
+                let g = Math.floor(Math.random() * 256);
+                let b = Math.floor(Math.random() * 256);
+                let color = `rgb(${r}, ${g}, ${b})`;
+
+                // Draw a circle at the computed position
+                drawCircle(x, y, 20, color);
+            }
+
+            // Draw additional patterns
+            for (let i = 0; i < 10; i++) {
+                let angle = i * Math.PI / 10;
+                let x1 = centerX + (i * 20);
+                let y1 = centerY + (i * 20);
+                let x2 = centerX + (i * 20 + 100);
+                let y2 = centerY + (i * 20 + 100);
+                drawLine(x1, y1, x2, y2, 'white', 2);
+            }
+        }
+
+        // Function to draw a circle
+        function drawCircle(x, y, radius, color) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+            ctx.fillStyle = color;
+            ctx.fill();
+        }
+
+        // Call the function to draw the geometric art
+        drawGeometricArt();
+    </script>
+</body>
+</html>

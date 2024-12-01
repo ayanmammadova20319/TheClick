@@ -1,0 +1,94 @@
+:root {
+    --ada-blue: #336178;
+    --ada-red: #ae485e;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 15px;
+  }
+  /*added hover to make an image interactive*/
+  .card img:hover{ 
+    transform: scale(1.1) rotate(0deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  .card h2 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#ae485e; /*ADA university's red color*/
+  }
+  
+  .card .major {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .card .description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .info {
+    text-align: left; /*to make the text written in the description aligned to left*/
+  }
+  /*adding style to the table inside cards*/
+  table {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+th, td {
+    border: 2px solid #336178; /*ADA university's blue color*/
+    padding: 10px; 
+    text-align: left; 
+}

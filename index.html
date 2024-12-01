@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+  <head>
+    <title>Homework 3: How websites work?(team 48)</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="home-page.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          style="height: 100px; width: 100px"
+          src="/media/THE_CLICK-removebg-preview (1).png"
+          alt="team-logo"
+        />
+      </div>
+      <div class="ada-logo">
+        <img
+          style="height: 80px; width: 100px"
+          src="/media/ada_logo_white.png"
+          alt="team-logo"
+        />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team-members.html">Team Members</a></li>
+        <li><a href="hour-of-code.html">Hour of Code</a></li>
+        <li><a href="web-project.html">Website Project</a></li>
+        <li><a href="code-artist.html">Code Art</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="/media/20231221_093533.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="/media/20231221_093736.jpg" style="width: 100%" />
+          <div class="text">Caption Two</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+    <section class="team">
+      <div class="card">
+        <i class="fa-solid fa-user-large fa-1.5x"></i>
+        <h3>Nuray Pashayeva</h3>
+        <p>Major: BSIT</p>
+        <p>Email: npashayeva20266@ada.edu.az</p>
+        <a href="team-members.html"><button>Read more</button></a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-user-large fa-1.5x"></i>
+        <h3>Ayan Mammadova</h3>
+        <p>Major: BSM</p>
+        <p>Email: amammadova20319@ada.edu.az</p>
+        <a href="team-members.html"><button>Read more</button></a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-user-large fa-1.5x"></i>
+        <h3>Aslan Sadikhov</h3>
+        <p>Major: BSEEE</p>
+        <p>Email: asadikhov17096@ada.edu.az</p>
+        <a href="team-members.html"><button>Read more</button></a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-user-large fa-1.5x"></i>
+        <h3>Royal Namazov</h3>
+        <p>Major: BSIT</p>
+        <p>Email: rnamazov20580@ada.edu.az</p>
+        <a href="team-members.html"><button>Read more</button></a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Have a Questions -->
+        <div class="footer-section">
+          <h4>Have a Questions?</h4>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Ahmadbey Aghaoghlu str. 61, Baku, Azerbaijan, AZ1008</p>
+          </div>
+          <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <p>(+994 12) 437 32 35</p>
+            <p>(+994 12) 437 32 36</p>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>info@ada.edu.az</p>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-section">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team-members.html">Team Members</a></li>
+            <li><a href="hour-of-code.html">Hour of Code</a></li>
+            <li><a href="web-project.html">Website Project</a></li>
+            <li><a href="code-artist.html">Code Art</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer-section">
+          <h4>Subscribe Us!</h4>
+          <input type="email" placeholder="Enter email address" />
+          <button>Subscribe</button>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-section">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/munan_ayan/profilecard/?igsh=ZXp6MDN6M2pzeG5j"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61550552161897&mibextid=ZbWKwL"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/ADA-SITE-SITE1101-2024-Fall/homework-3-team-48"
+              ><i class="fa-brands fa-github fa-2x"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://youtube.com/@aayramny4241?si=FCw5z-ghEc81ACC_"
+              ><i class="fa-brands fa-youtube fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
